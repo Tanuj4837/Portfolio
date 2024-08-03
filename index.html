@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"> <!-- Lightbox CSS -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Professional Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Profile Picture" class="profile-img">
+            <p>Hello, I'm Tanuj Kumar, a dedicated software engineer passionate about creating innovative and efficient web solutions. I am currently pursuing a Bachelor's degree in Computer Science Engineering at IIIT Guwahati, where I have honed my skills in various technologies including C, C++, HTML, CSS, and JavaScript.</p>
+            <p>I thrive on solving complex challenges and continuously seek to stay updated with the latest industry trends. My aim is to develop applications that are both user-friendly and impactful. Outside of coding, I enjoy exploring new technologies and working on personal projects to expand my knowledge.</p>
+        </section>
+        <section id="projects">
+            <h2>Portfolio</h2>
+            <div class="filter-buttons">
+                <button onclick="filterProjects('all')">All</button>
+                <button onclick="filterProjects('web')">Web</button>
+                <button onclick="filterProjects('app')">App</button>
+            </div>
+            <div class="project web">
+                <a href="https://images.pexels.com/photos/4392287/pexels-photo-4392287.jpeg" data-lightbox="portfolio" data-title="Personal Blog Website">
+                    <img src="https://images.pexels.com/photos/4392287/pexels-photo-4392287.jpeg" alt="Personal Blog Website" class="project-img">
+                </a>
+                <h3>Personal Blog Website</h3>
+                <p>Developed a sleek and modern personal blog website featuring a custom content management system, user authentication, and a fully responsive design using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project app">
+                <a href="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" data-lightbox="portfolio" data-title="Interactive Web Application">
+                    <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="Interactive Web Application" class="project-img">
+                </a>
+                <h3>Interactive Web Application</h3>
+                <p>Designed an interactive web application for task management utilizing React and Node.js to deliver real-time updates and a seamless user experience.</p>
+            </div>
+            <div class="project web">
+                <a href="https://images.pexels.com/photos/1181266/pexels-photo-1181266.jpeg" data-lightbox="portfolio" data-title="Code Snippet Organizer">
+                    <img src="https://images.pexels.com/photos/1181266/pexels-photo-1181266.jpeg" alt="Code Snippet Organizer" class="project-img">
+                </a>
+                <h3>Code Snippet Organizer</h3>
+                <p>Created a user-friendly tool for organizing code snippets with features for tagging and categorizing, enhancing accessibility and management efficiency.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via <a href="mailto:tanuj.kumar21b@iiitg.ac.in">email</a> or use the form below to get in touch:</p>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Connect with me on <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a> or <a href="https://github.com/your-profile" target="_blank">GitHub</a></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script> <!-- Lightbox JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
